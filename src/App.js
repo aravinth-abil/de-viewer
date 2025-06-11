@@ -229,7 +229,7 @@ function App() {
       <main className="app-main">{renderContent()}</main>
 
       <footer className="app-footer">
-        <p>&copy; 2025 Document & Excel Viewer - Powered by Mistral AI</p>
+        <p>&copy; 2025 Document & Excel Viewer</p>
       </footer>
     </div>
   );

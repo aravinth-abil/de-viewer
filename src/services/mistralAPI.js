@@ -9,13 +9,14 @@ class MistralAPI {
       throw new Error("Mistral API key is not configured");
     }
 
+    const { maxTokens, ...rest } = options;
     const requestBody = {
       model: options.model || "mistral-small-latest",
       messages: messages,
-      max_tokens: options.maxTokens || 500,
+      max_tokens: maxTokens || 500,
       temperature: options.temperature || 0.7,
       stream: false,
-      ...options,
+      ...rest,
     };
 
     try {

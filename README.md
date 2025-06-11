@@ -7,7 +7,6 @@ A modern React application for viewing and editing Excel files and documents wit
 ### Excel Viewer
 
 - ✅ Multi-sheet Excel file support (.xlsx, .xls, .csv)
-- ✅ Empty cell handling with visual indicators
 - ✅ Sheet tab navigation
 - ✅ Search and filter functionality
 - ✅ Column sorting
@@ -66,10 +65,6 @@ npm install
 ```
 
 3. **Environment Configuration**
-
-```bash
-cp .env.example .env
-```
 
 Edit `.env` and add your Mistral AI API key:
 
@@ -206,54 +201,6 @@ export const APP_CONFIG = {
 };
 ```
 
-## 🧪 Testing
-
-### Run Tests
-
-```bash
-npm test
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **File Upload Fails**
-
-   - Check file size (max 50MB)
-   - Verify file format is supported
-   - Ensure stable internet connection
-
-2. **AI Features Not Working**
-
-   - Verify Mistral API key is configured
-   - Check API quota and billing
-   - Ensure text selection is not empty
-
-3. **Excel Files Not Loading**
-
-   - Try opening in Excel first to verify file integrity
-   - Check browser console for errors
-   - Ensure XLSX library is loaded
-
-4. **Performance Issues**
-   - Large files may take time to process
-   - Consider breaking large files into smaller chunks
-   - Check browser memory usage
-
-### Error Messages
-
-- `File size exceeds limit`: File is too large
-- `Unsupported file type`: File format not supported
-- `AI processing failed`: API key or quota issue
-- `Failed to read file`: File may be corrupted
-
 ## 📚 Dependencies
 
 ### Core Libraries
@@ -261,40 +208,3 @@ npm run build
 - **React**: ^18.2.0 - UI framework
 - **XLSX**: ^0.18.5 - Excel file processing
 - **Axios**: ^1.6.2 - HTTP client for API calls
-
-### Development Tools
-
-- **React Scripts**: 5.0.1 - Build tooling
-- **ESLint**: Code linting
-- **Prettier**: Code formatting
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-For issues and questions:
-
-1. Check the troubleshooting section
-2. Search existing GitHub issues
-3. Create a new issue with detailed description
-
-## 🔮 Future Enhancements
-
-- [ ] Real-time collaboration
-- [ ] Version history
-- [ ] Advanced Excel formulas
-- [ ] PDF export
-- [ ] Cloud storage integration
-- [ ] Mobile app
-- [ ] Offline mode
-- [ ] Advanced AI features
