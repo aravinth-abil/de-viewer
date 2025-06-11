@@ -70,6 +70,7 @@ Edit `.env` and add your Mistral AI API key:
 
 ```env
 REACT_APP_MISTRAL_API_KEY=your_mistral_api_key_here
+REACT_APP_MISTRAL_ENDPOINT=https://api.mistral.ai/v1/chat/completions
 ```
 
 4. **Start development server**
