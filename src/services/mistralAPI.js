@@ -1,7 +1,5 @@
-// const MISTRAL_API_KEY = process.env.REACT_APP_MISTRAL_API_KEY;
-const MISTRAL_API_KEY = "1A2QBdRbGOASzS3zptFdVjLNmZe1s3uE";
-console.log("MISTRAL_API_KEY", MISTRAL_API_KEY, process.env);
-const MISTRAL_ENDPOINT = "https://api.mistral.ai/v1/chat/completions";
+const MISTRAL_API_KEY = process.env.REACT_APP_MISTRAL_API_KEY;
+const MISTRAL_ENDPOINT = process.env.REACT_APP_MISTRAL_ENDPOINT;
 
 class MistralAPI {
   static async makeRequest(messages, options = {}) {

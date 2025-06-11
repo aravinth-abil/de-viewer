@@ -7,13 +7,6 @@ export const APP_CONFIG = {
   autoSaveInterval: 30000, // 30 seconds
 };
 
-export const AI_CONFIG = {
-  maxTextLength: 5000,
-  defaultModel: "mistral-small",
-  timeout: 30000, // 30 seconds
-  retryAttempts: 3,
-};
-
 export const THEMES = {
   light: {
     primary: "#1976d2",
